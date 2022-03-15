@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Understanding Pulblic Opinion</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Understanding Public Opinion</h1>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a href='index.html' class="logo">Portfolio</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Homepage</a></li>
+
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/vicken-" class="icon brands fa-linkedin" target="_blank"><span
+							class="label"></span></a></li>
+				<li><a href="https://github.com/Vickenn" class="icon brands fa-github" target="_blank"><span
+							class="label"></span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h1><a class="button large">Aiding Tuition Promotion Strategy</a></h1>
+					<p>Due to the fact that online studying hindered student's learning ability, thus tuition is
+						certainly more favorable, especially if it is done directly(offline). </p>
+					<p style="font-size:90%;">January 28, 2022</p>
+				</header>
+
+				<hr color="black">
+
+				<a class="image main"><img src="images/akshar-dave-mkTqZN1NzhY-unsplash.jpg" alt="" /></a>
+
+
+				<hr color="black">
+				<h3 style="text-align:left;">Problems</h3>
+				<p style="text-align:left;">Offline studying policy had been ordered to school in the early month of
+					January in the year 2022, which caused several debate about such policy. According to previous
+					statement, our client which run in tuition services requested the aid of out services to provide
+					sentiment analysis. Thus it is essential to understand the perspective of society about it to
+					formulize some kind of promotion strategy.</p>
+				<hr color="black">
+
+				<h3 style="text-align:left;">Features</h3>
+				<p style="text-align:left;"> <b>PTM</b>: An offline learning policy used as a keyword to web scrape from
+					Twitter and news website (Kompas.com)
+				</p>
+
+				<h1 style="text-align:left;"><a
+						href="https://drive.google.com/uc?export=download&id=1MGhnq-A2U2XF6xfMS_zrIqCAByk_QBcm"
+						class="button large">Download Dataset</a></h1>
+
+				<hr color="black">
+				<h3 style="text-align:left;">Analysis</h3>
+				<p style="text-align:left;">Analysis of the sentiment was targeted 3 days prior (from 23 January 2022
+					untik 26 January 2022), resulting in 345 row of datas, consisting of 300 tweets and 45 news title.
+				</p>
+
+				<a class="image main"><img src="images/eda_nlp_overall.png" alt="" /></a>
+				<p style="text-align:center; font-size: 75%">Overall distribution of data</p>
+
+				<p style="text-align:left;">Based on data distribution, overall tweet and news title length are short,
+					with no longer than 50 characters and no more than 16 sentences, indicating the tendency of
+					short and simple way of sharing information.</p>
+
+				<a class="image main"><img src="images/overall_common.png" alt="" /></a>
+				<p style="text-align:center; font-size: 75%">Overall common word distribution and combination</p>
+
+				<p style="text-align:left;"> PTM has the highest count based on the methodology of using that word as a
+					keyword, resulting in the highest number. To further understand the sentiment of each of the tweets
+					and news title, machine learning was used to conduct story building and context understanding.
+					Based on the machine learning, we discovered there were 4 context, that is overall reffering to the
+					increasing numbers of offline learning fro school and also encouragement for students, teachers, and
+					parents.
+				</p>
+
+				<a class="image main"><img src="images/Inflasi v Pendapatan.png" alt=""></a>
+				<p style="text-align:center; font-size: 75%">Inflasion vs Earning</p>
+				<hr color="black">
+
+				<p style="text-align:left;">According to the hierarchy above, it is clear that earning(Pendapatan)
+					effect and effected by inflation (Inflasi), thus, both of those variables are chosen for making
+					clustering model. In this opportunity, K-Means Clustering is used due to the fact that the labeling
+					of one countries' category is not yet clear, making unsupervised model more appealing.</p>
+
+				<hr color="black">
+				<a class="image main"><img src="images/KMean.png" alt="" /></a>
+				<hr color="black">
+
+				<p style="text-align:left;">Overall, there are two major groups of clustering, which is the higher
+					income and lower income. For the lower income itself, it is divided again into two sub-clusters. To
+					further understand why such sub-clusters are created, we can learn from the mean of each variables.
+				</p>
+				<hr color="black">
+
+				<a class="image main"><img src="images/Rendah.png" alt="" /></a>
+				<p style="text-align:center; font-size: 75%">Mean from Lower Income Group</p>
+				<hr color="black">
+
+				<a class="image main"><img src="images/Sedang.png" alt="" /></a>
+				<p style="text-align:center; font-size: 75%">Mean from Mid Income Group</p>
+				<hr color="black">
+
+				<a class="image main"><img src="images/Tinggi.png" alt="" /></a>
+				<p style="text-align:center; font-size: 75%">Mean from High Income Group</p>
+				<hr color="black">
+
+				<p style="text-align:left;">I would like to point out the fact there are three key variables that
+					contribute to the creation of sub-clusters according to the analysis above. Firstly, there are a
+					slight differences between two groups in fertility rate, where it is a bit higher in lower group.
+					Secondly, life expectancy from lower group is much lower compare to the mid group (in fact, the mid
+					group life expectancy is more resemble that of a higher group). And finally, expenses in healthcare.
+					Although lower group has more percentage (though not that much differences) from the mid group.
+					<br>From here on, we could see what problem that lower group country is facing, that is the lower
+					life expectancy that is not in balance with the fertility rate. This is caused by the lack of
+					funding in the healthcare sector, and so I would like to propose the idea of aiding in such sector
+					for the countries with lower income that is less than 1000 because, based on previous analysis, we
+					conclude that the lowest income has the potential in a decrease in human resources, therefore, the
+					countries that I would to suggest is:
+				</p>
+				<hr color="black">
+
+				<a class="image main"><img src="images/Negara.png" alt="" /></a>
+				<hr color="black">
+
+				<p><a href="https://gist.github.com/Vickenn/bba8e953936531e865fb8ebda1136f81" target="_blank"
+						class="button">Analysis Details</a></p>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			</section>
+			<section class="split contact">
+
+				<section>
+					<p><a href="index.html" class="button">Back to Homepage</a></p>
+				</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; 2022- Vicken</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
