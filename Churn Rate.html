@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HELP International</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>HELP International</h1>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href='index.html' class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Homepage</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/vicken-" class="icon brands fa-linkedin" target="_blank"><span class="label"></span></a></li>
+							<li><a href="https://github.com/Vickenn" class="icon brands fa-github" target="_blank" ><span class="label"></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h1><a class="button large">Aiding "HELP International" in Determining Countries</a></h1>
+									<p>HELP International is an international humanitarian NGO committed to fighting poverty and providing basic facilities and assistance to people in underdeveloped countries during disasters and natural disasters.</p>
+									<p style="font-size:90%;">March 5, 2022</p>
+								</header>
+
+								<hr color="black">  
+
+								<a class="image main"><img src="images/campaign_creator.png" alt="" /></a>
+								
+
+								<hr color="black">  
+								<h3 style="text-align:left;">Problems</h3>
+								<p style="text-align:left;">HELP International has raised approximately $10 million. HELP's CEO need to decide how to use this fund strategically and effectively. Therefore, there is a need to determine which countries that need the most help, based on socio-economic level.</p>
+
+								<hr color="black">  
+
+								<h3 style="text-align:left;">Features</h3>
+								<p style="text-align:left;"> <b>Negara</b>: Name of the countries
+								<br><b>Kematian_anak</b>: Numbers of children under 5 y.o. death per 1000 births
+								<br><b>Ekspor</b>: Exported goods per capita
+								<br><b>Kesehatan</b>: Health expenses per capita
+								<br><b>Impor</b>: Imported goods per capita
+								<br><b>Pendapatan</b>: Net income per person
+								<br><b>Inflasi</b>: Measurement of annual total GDP growth
+								<br><b>Harapan_hidup</b>: Average amount of birth with the same death pattern
+								<br><b>Jumlah_fertiliti</b>: Number of child that will be born with the same fertility pattern
+								<br><b>GDPperkapita</b>: GDP per capita, calculated from GDP total / total population</p>
+
+								<h1 style="text-align:left;"><a href="https://drive.google.com/uc?export=download&id=1WrbvqsWUUlqFStXHyFmrzBmr-1E99lf9"class="button large">Download Dataset</a></h1>
+
+								<hr color="black">  
+								<h3 style="text-align:left;">Analysis</h3>
+								<p style="text-align:left;">Based on the informations above, it is shown that there are several features from this data and we need to determine the relational matrix by using multivariate analysis such as below</p>
+								
+								<a class="image main"><img src="images/matrix_multivariate.png" alt="" /></a>
+
+								<p style="text-align:left;">Built on initial multivariate analysis, we could eliminate and determine which variables are related. By doing so, we could plot basic scatterplot as well to see how is the distribution of such data using those variables.</p>
+
+								<a class="image main"><img src="images/Tingkat_Kematian.png" alt="" /></a>
+								<p style="text-align:center; font-size: 75%">Child Death Rate (size of the circle) based on Inflation against Earning and Life Expectancy(hue)</p>
+
+								<a class="image main"><img src="images/eda_help.png" alt="" ></a>
+								<p style="text-align:left;"> The initial graph above show us that when looking at inflation level only, the lower  inflation level is, the more likely that the income of one country can make is higher due to the fact that the price of living and goods are more valuable.
+								<br>However, based on income, we could see that there is a higher portion of child death (circle size) with low life expectancy (hue) at the low income group.
+								<br>In order to further understand and provide a workable concept, we could plot a hierarchy centered from segmented multivariate analysis.</p>
+
+								<a class="image main"><img src="images/Hirarki2.png" alt="" ></a>
+								<p style="text-align:left;">According to the hierarchy above, it is clear that earning(Pendapatan) effect and effected by inflation (Inflasi), thus, both of those variables are chosen for making clustering model. In this opportunity, K-Means Clustering is used due to the fact that the labeling of one countries' category  is not yet clear, making unsupervised model more appealing.</p>
+
+								<hr color="black"> 
+								<a class="image main"><img src="images/KMean.png" alt="" /></a>
+								<hr color="black">
+
+								<p style="text-align:left;">Overall, there are two major groups of clustering, which is the higher income and lower income. For the lower income itself, it is divided again into two sub-clusters. To further understand why such sub-clusters are created, we can learn from the mean of each variables.</p>
+								<hr color="black"> 
+
+								<a class="image main"><img src="images/Rendah.png" alt="" /></a>
+								<p style="text-align:center; font-size: 75%">Mean from Lower Income Group</p>
+								<hr color="black"> 
+
+								<a class="image main"><img src="images/Sedang.png" alt="" /></a>
+								<p style="text-align:center; font-size: 75%">Mean from Mid Income Group</p>
+								<hr color="black"> 
+
+								<a class="image main"><img src="images/Tinggi.png" alt="" /></a>
+								<p style="text-align:center; font-size: 75%">Mean from High Income Group</p>
+								<hr color="black"> 
+
+								<p style="text-align:left;">I would like to point out the fact there are three key variables that contribute to the creation of sub-clusters according to the analysis above. Firstly, there are a slight differences between two groups in fertility rate, where it is a bit higher in lower group. Secondly, life expectancy from lower group is much lower compare to the mid group (in fact, the mid group life expectancy is more resemble that of a higher group). And finally, expenses in healthcare. Although lower group has more percentage (though not that much differences) from the mid group.
+								<br>From here on, we could see what problem that lower group country is facing, that is the lower life expectancy that is not in balance with the fertility rate. This is caused by the lack of funding in the healthcare sector, and so I would like to propose the idea of aiding in such sector for the countries with lower income that is less than 1000 because, based on previous analysis, we conclude that the lowest income has the potential in a decrease in human resources, therefore, the countries that I would to suggest is:</p>
+								<hr color="black">
+
+								<a class="image main"><img src="images/Negara.png" alt="" width="50" /></a>
+								<hr color="black"> 
+
+								<p><a href="https://gist.github.com/Vickenn/a952df5a0ebc365f912d20364b47197c" target="_blank" class="button">Analysis Details</a></p>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						</section>
+						<section class="split contact">
+
+							<section>
+								<p><a href="index.html" class="button">Back to Homepage</a></p>
+							</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; 2022- Vicken</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
